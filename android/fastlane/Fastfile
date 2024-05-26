@@ -19,7 +19,7 @@ platform :android do
   desc "Lane for android firebase app distribution"
   lane :firebase_distribution do
     sh 'flutter build apk --release --flavor prod -t lib/main_prod.dart --no-tree-shake-icons'
-    firebase_app_distribution(
+    firebase_distribution(
         debug: false,
         app: "1:244076960106:android:c087f48c39b588d6d06d13",
         # to secure secret locally without github actions use pkg "flutter_dotenv"
