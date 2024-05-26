@@ -8,81 +8,81 @@ class TextStyles {
   static TextStyle black24bold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
-    color: LightColors.black,
+    color: LightColorsManager.black,
   );
   static TextStyle blue32Bold = TextStyle(
     fontSize: 32.sp,
     fontWeight: FontWeight.bold,
-    color: LightColors.primary,
+    color: LightColorsManager.primary,
   );
   static TextStyle gery11regular = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.gery,
+    color: LightColorsManager.gery,
   );
   static TextStyle light3Grey11regular = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.light3Grey,
+    color: LightColorsManager.light3Grey,
   );
   static TextStyle black11regular = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.black,
+    color: LightColorsManager.black,
   );
   static TextStyle black13regular = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.black,
+    color: LightColorsManager.black,
   );
   static TextStyle primary11regular = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.primary,
+    color: LightColorsManager.primary,
   );
   static TextStyle white16semiBold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.semiBold,
-    color: LightColors.white,
+    color: LightColorsManager.white,
   );
   static TextStyle primary13semiBold = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.semiBold,
-    color: LightColors.primary,
+    color: LightColorsManager.primary,
   );
   static TextStyle primary24bold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
-    color: LightColors.primary,
+    color: LightColorsManager.primary,
   );
   static TextStyle grey14regular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.grey,
+    color: LightColorsManager.grey,
   );
   static TextStyle lightGrey14regular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.lightGrey,
+    color: LightColorsManager.lightGrey,
   );
   static TextStyle primary12regular = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeightHelper.regular,
-    color: LightColors.primary,
+    color: LightColorsManager.primary,
   );
   static TextStyle light1Grey14medium = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.medium,
-    color: LightColors.light1Grey,
+    color: LightColorsManager.light1Grey,
   );
   static TextStyle black14medium = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.medium,
-    color: LightColors.black,
+    color: LightColorsManager.black,
   );
   static TextStyle black15medium = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeightHelper.medium,
-    color: LightColors.black,
+    color: LightColorsManager.black,
   );
 }

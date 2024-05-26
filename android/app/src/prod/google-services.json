@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244076960106",
+    "project_id": "alo-taxi-fbc5e",
+    "storage_bucket": "alo-taxi-fbc5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244076960106:android:c087f48c39b588d6d06d13",
+        "android_client_info": {
+          "package_name": "com.alo.taxi.alo_taxi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVpIofW9kbciGon0ANM5j5DV3eQnPxgoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

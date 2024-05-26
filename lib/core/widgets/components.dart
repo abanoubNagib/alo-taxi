@@ -50,7 +50,7 @@ Widget customOutlinedButton({
                             borderRadius: BorderRadius.circular(borderRadius)))
                     : null,
                 foregroundColor: MaterialStatePropertyAll(
-                    foregroundColor ?? LightColors.primary),
+                    foregroundColor ?? LightColorsManager.primary),
                 side: MaterialStateProperty.all(BorderSide(
                     color: sideColor ?? Colors.black, width: sideWidth ?? 1)),
               ),
@@ -85,8 +85,8 @@ Future<void> dialogBuilder({
       return PopScope(
         canPop: canPop,
         child: AlertDialog(
-          surfaceTintColor: LightColors.white,
-          backgroundColor: LightColors.white,
+          surfaceTintColor: LightColorsManager.white,
+          backgroundColor: LightColorsManager.white,
           title: title != null
               ? Align(
                   alignment: Alignment.topRight,
@@ -170,8 +170,8 @@ Widget customDialogElevatedButton({
         ? null
         : ButtonStyle(
             backgroundColor: MaterialStateProperty.all(
-                isGreen ? LightColors.green : LightColors.primary),
-            foregroundColor: MaterialStateProperty.all(LightColors.white),
+                isGreen ? LightColorsManager.green : LightColorsManager.primary),
+            foregroundColor: MaterialStateProperty.all(LightColorsManager.white),
           ),
     child: Padding(
       padding: const EdgeInsets.all(8),
@@ -187,7 +187,7 @@ customTextWarning(
     child: Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: LightColors.primary,
+        color: LightColorsManager.primary,
       ),
       child: Padding(
         padding: const EdgeInsets.all(15),
@@ -203,9 +203,9 @@ customTextWarning(
 
 void showScaffoldMessage(BuildContext context, String text, [ToastStates state = ToastStates.success]) {
   Map<ToastStates, Color> selectColor = {
-    ToastStates.success: LightColors.primary,
+    ToastStates.success: LightColorsManager.primary,
     ToastStates.warning: Colors.amber.shade900,
-    ToastStates.error: LightColors.red,
+    ToastStates.error: LightColorsManager.red,
   };
 
   ScaffoldMessenger.of(context).showSnackBar(
@@ -295,7 +295,7 @@ class AText extends StatelessWidget {
       child: Text(
         text,
         style: style ??
-            context.textTheme.titleMedium!.copyWith(color: LightColors.white),
+            context.textTheme.titleMedium!.copyWith(color: LightColorsManager.white),
       ),
     );
   }

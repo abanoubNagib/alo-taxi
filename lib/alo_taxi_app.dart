@@ -18,9 +18,9 @@ class AloTaxiApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Alo Taxi App',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: LightColors.primary),
-          primaryColor: LightColors.primary,
-          scaffoldBackgroundColor: LightColors.white,
+          colorScheme: ColorScheme.fromSeed(seedColor: LightColorsManager.primary),
+          primaryColor: LightColorsManager.primary,
+          scaffoldBackgroundColor: LightColorsManager.white,
         ),
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.getStartedScreen,
