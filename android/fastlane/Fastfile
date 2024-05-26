@@ -27,8 +27,8 @@ platform :android do
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-prod-release.apk",
         groups: "me",
-        testers: "kamal.ayman5222@gmail.com, kamal.ayman522@gmail.com",
-        release_notes: "first fastlane firebase distribution !!!"
+        # testers: "kamal.ayman5222@gmail.com, kamal.ayman522@gmail.com",
+        release_notes: "This build is for testing purposes only",
     )
   end
 end
