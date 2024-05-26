@@ -23,7 +23,8 @@ platform :android do
         debug: false,
         app: "1:244076960106:android:c087f48c39b588d6d06d13",
         # to secure secret locally without github actions use pkg "flutter_dotenv"
-        firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
+        firebase_cli_token: "1//03UjH9wA-6XZnCgYIARAAGAMSNwF-L9IrFR3U9fY3A56i0aCU8Ja9yy_iQ8J3tV6bfw8RMKaxk-cGtRzy3r7Jz972q_ocbZ7cprs",
+#         firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-prod-release.apk",
         groups: "me",

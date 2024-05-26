@@ -7,7 +7,7 @@ class GetStartedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Get Started Screen'),
+        child: Text('Get Started Screen - Alo Taxi App'),
       ),
     );
   }
