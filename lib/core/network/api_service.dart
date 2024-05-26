@@ -1,9 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:retrofit/retrofit.dart';
-
+import 'package:retrofit/http.dart';
 import 'api_constance.dart';
-
 part 'api_service.g.dart';
+
 
 @RestApi(baseUrl: ApiConstance.baseUrl)
 abstract class ApiService {

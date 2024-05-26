@@ -1,18 +1,14 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'light_colors.dart';
 
 ThemeData lightTheme = ThemeData(
-  colorScheme: ColorScheme.fromSeed(seedColor: LightColors.primary),
-  // backgroundColor: LightColors.primary,
-  scaffoldBackgroundColor: LightColors.background,
+  colorScheme: ColorScheme.fromSeed(seedColor: LightColorsManager.primary),
+  scaffoldBackgroundColor: LightColorsManager.background,
   primarySwatch: Colors.orange,
   useMaterial3: true,
-  floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: LightColors.primary),
-  // scaffoldBackgroundColor: Colors.white,
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(backgroundColor: LightColorsManager.primary),
   appBarTheme: const AppBarTheme(
     foregroundColor: Colors.black,
     titleSpacing: 20.0,

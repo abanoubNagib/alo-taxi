@@ -51,7 +51,7 @@ class CustomTextFormField extends StatefulWidget {
     this.labelColor,
     this.suffixIcon,
     this.suffixIconOnPressed,
-    this.suffixIconColor = LightColors.primary,
+    this.suffixIconColor = LightColorsManager.primary,
     this.textDirection = TextDirection.ltr,
     this.textInputAction = TextInputAction.next,
     this.obscureText = false,
@@ -59,7 +59,7 @@ class CustomTextFormField extends StatefulWidget {
     this.readOnly = false,
     this.maxLength,
     this.maxLines = 1,
-    this.fillColor = LightColors.light2Grey,
+    this.fillColor = LightColorsManager.light2Grey,
     this.focusedBorderRadius = 16,
     this.unFocusedBorderRadius = 16,
     this.elevation = 0,
@@ -67,7 +67,7 @@ class CustomTextFormField extends StatefulWidget {
     this.padding = 0,
     this.top = 0,
     this.inputFormatters,
-    this.focusedBorderColor = LightColors.primary,
+    this.focusedBorderColor = LightColorsManager.primary,
     this.contentPadding = const EdgeInsets.fromLTRB(12.0, 20.0, 12.0, 12.0),
   });
 
@@ -100,7 +100,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return Theme(
       data: ThemeData().copyWith(
         colorScheme:
-            ThemeData().colorScheme.copyWith(primary: LightColors.primary),
+            ThemeData().colorScheme.copyWith(primary: LightColorsManager.primary),
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: widget.padding),
@@ -138,7 +138,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 hintText: widget.hintText,
                 hintStyle: TextStyles.light1Grey14medium,
                 alignLabelWithHint: true,
-                suffixIconColor: _isFocused ? widget.suffixIconColor : LightColors.grey,
+                suffixIconColor: _isFocused ? widget.suffixIconColor : LightColorsManager.grey,
                 labelStyle: TextStyles.light1Grey14medium,
                 prefixIcon: widget.prefixIcon != null ? Icon(widget.prefixIcon) : null,
                 suffixIcon: widget.suffixIcon == null
@@ -151,12 +151,12 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.unFocusedBorderRadius),
                   borderSide:
-                      const BorderSide(color: LightColors.lightGrey, width: 1.3),
+                      const BorderSide(color: LightColorsManager.lightGrey, width: 1.3),
                 ),
                 disabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.unFocusedBorderRadius),
                   borderSide:
-                      const BorderSide(color: LightColors.lightGrey, width: 1.3),
+                      const BorderSide(color: LightColorsManager.lightGrey, width: 1.3),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.focusedBorderRadius),
@@ -165,20 +165,20 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.unFocusedBorderRadius),
                   borderSide:
-                      const BorderSide(color: LightColors.lightGrey, width: 1.3),
+                      const BorderSide(color: LightColorsManager.lightGrey, width: 1.3),
                 ),
                 errorBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.unFocusedBorderRadius),
                   borderSide:
-                      const BorderSide(color: LightColors.red, width: 1.3),
+                      const BorderSide(color: LightColorsManager.red, width: 1.3),
                 ),
                 errorStyle: context.textTheme.bodyMedium!.copyWith(
-                  color: LightColors.black,
+                  color: LightColorsManager.black,
                 ),
                 focusedErrorBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.focusedBorderRadius),
                   borderSide:
-                      const BorderSide(color: LightColors.red2, width: 1.3),
+                      const BorderSide(color: LightColorsManager.red2, width: 1.3),
                 ),
               ),
             ),
