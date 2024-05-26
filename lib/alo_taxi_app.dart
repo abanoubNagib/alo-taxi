@@ -23,7 +23,7 @@ class AloTaxiApp extends StatelessWidget {
           scaffoldBackgroundColor: LightColors.white,
         ),
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: Routes.onBoardingScreen,
+        initialRoute: Routes.getStartedScreen,
       ),
     );
   }
