@@ -1,4 +1,7 @@
+import 'package:alo_taxi/features/get_started/get_started_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'routes.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -6,17 +9,13 @@ class AppRouter {
     final arguments = settings.arguments;
 
     switch (settings.name) {
-      // case Routes.onBoardingScreen:
+      // case Routes.getStartedScreen:
       //   return MaterialPageRoute(
-      //     builder: (_) => const OnBoardingScreen(),
+      //     builder: (_) => const GetStartedScreen(),
       //   );
       default:
         return MaterialPageRoute(
-          builder: (_) => Scaffold(
-            body: Center(
-              child: Text('No route defined for ${settings.name}'),
-            ),
-          ),
+          builder: (_) => const GetStartedScreen(),
         );
     }
   }
