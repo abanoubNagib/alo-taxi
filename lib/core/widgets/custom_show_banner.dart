@@ -18,7 +18,7 @@ void showBanner(BuildContext context, Widget content, String? text) {
               },
               child: Text(text, style: Theme.of(context).textTheme.titleMedium))
       ],
-      backgroundColor: LightColors.primary,
+      backgroundColor: LightColorsManager.primary,
       elevation: 5,
       contentTextStyle: Theme.of(context)
           .textTheme

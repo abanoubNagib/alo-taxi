@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
-import 'api_constance.dart';
-import 'api_error_model.dart';
+import '../errors/api_error_model.dart';
+import '../network/api_constance.dart';
 
 
 enum DataSource {

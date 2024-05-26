@@ -27,7 +27,7 @@ enum ToastStates { success, error, warning }
 
 chooseToastColor(ToastStates state) {
   const Map<ToastStates, Color> toastColors = {
-    ToastStates.success: LightColors.primary,
+    ToastStates.success: LightColorsManager.primary,
     ToastStates.warning: Colors.amber,
     ToastStates.error: Colors.red,
   };

@@ -9,7 +9,7 @@ ThemeData darkTheme = ThemeData(
   scaffoldBackgroundColor: Color(0xff333739),
   primarySwatch: Colors.orange,
   floatingActionButtonTheme:
-   FloatingActionButtonThemeData(backgroundColor: LightColors.primary),
+   FloatingActionButtonThemeData(backgroundColor: LightColorsManager.primary),
   appBarTheme: AppBarTheme(
     titleSpacing: 20.0,
     systemOverlayStyle: SystemUiOverlayStyle(
@@ -24,7 +24,7 @@ ThemeData darkTheme = ThemeData(
   ),
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     type: BottomNavigationBarType.fixed,
-    selectedItemColor: LightColors.primary,
+    selectedItemColor: LightColorsManager.primary,
     unselectedItemColor: Colors.grey,
     elevation: 20.0,
     backgroundColor: Color(0xff333739),

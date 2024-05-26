@@ -24,9 +24,9 @@ class CustomMaterialButton extends StatelessWidget {
 
   const CustomMaterialButton({
     super.key,
-    this.buttonColor = LightColors.primary,
-    this.textColor = LightColors.white,
-    this.borderColor = LightColors.primary,
+    this.buttonColor = LightColorsManager.primary,
+    this.textColor = LightColorsManager.white,
+    this.borderColor = LightColorsManager.primary,
     this.withBorderColor = false,
     this.fontSize = 13,
     this.elevation = 0,
@@ -68,7 +68,7 @@ class CustomMaterialButton extends StatelessWidget {
                     Text(text!,
                         style: textStyle ?? TextStyles.white16semiBold),
               ))
-            : const Center(child: CircularProgressIndicator(color: LightColors.white,)),
+            : const Center(child: CircularProgressIndicator(color: LightColorsManager.white,)),
       ),
     );
   }
