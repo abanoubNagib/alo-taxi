@@ -1,5 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: unused_element, unused_field
+
 part of 'api_service.dart';
 
 // **************************************************************************

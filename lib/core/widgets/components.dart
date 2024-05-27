@@ -43,15 +43,15 @@ Widget customOutlinedButton({
             height: height,
             child: OutlinedButton(
               style: ButtonStyle(
-                padding: const MaterialStatePropertyAll(EdgeInsets.zero),
+                padding: const WidgetStatePropertyAll(EdgeInsets.zero),
                 shape: borderRadius != null
-                    ? MaterialStateProperty.all<RoundedRectangleBorder>(
+                    ? WidgetStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(borderRadius)))
                     : null,
-                foregroundColor: MaterialStatePropertyAll(
+                foregroundColor: WidgetStatePropertyAll(
                     foregroundColor ?? LightColorsManager.primary),
-                side: MaterialStateProperty.all(BorderSide(
+                side: WidgetStateProperty.all(BorderSide(
                     color: sideColor ?? Colors.black, width: sideWidth ?? 1)),
               ),
               onPressed: onPressed,
@@ -169,9 +169,9 @@ Widget customDialogElevatedButton({
     style: isGreen == null
         ? null
         : ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(
+            backgroundColor: WidgetStateProperty.all(
                 isGreen ? LightColorsManager.green : LightColorsManager.primary),
-            foregroundColor: MaterialStateProperty.all(LightColorsManager.white),
+            foregroundColor: WidgetStateProperty.all(LightColorsManager.white),
           ),
     child: Padding(
       padding: const EdgeInsets.all(8),
