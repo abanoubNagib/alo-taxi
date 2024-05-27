@@ -1,3 +1,4 @@
 class Routes {
-  static const String getStartedScreen = '/getStartedScreen';
+  static const String loginScreen = '/loginScreen';
+  static const String splashScreen = '/splashScreen';
 }

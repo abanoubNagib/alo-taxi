@@ -12,7 +12,7 @@ void showBanner(BuildContext context, Widget content, String? text) {
         if (text != null)
           TextButton(
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.white)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white)),
               onPressed: () {
                 ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
               },
